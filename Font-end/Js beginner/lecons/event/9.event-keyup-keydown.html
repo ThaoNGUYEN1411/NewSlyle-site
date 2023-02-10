@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event keyup keydown</title>
+</head>
+<body>
+    <h1>Event keyup keydown</h1>
+    <fieldset>
+        <legend>Register form </legend>
+        <label for="username">Username</label>
+        <br>
+        <input type="text" id="username" autocomplete="off">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="text" id="password" autocomplete="off">
+        <br>
+        <label for="city">City</label> <br>
+        <select name="city" id="city">
+            <option value="">--Chon--</option>
+            <option value="1">Ha Noi</option>
+            <option value="2">TP Ho Chi Minh</option>
+            <option value="3">Da Nang</option>
+            <option value="4">Cac thanh pho khac</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Login now"/>
+    </fieldset>
+
+    <script>
+        const username = document.getElementById('username');
+        username.addEventListener('keydown', function(e){
+            console.log(e.which);
+        });
+        username.addEventListener('keyup', function(){
+            console.log('keyup');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map render html</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .products {
+            margin: 0px auto;
+            display: flex;
+            padding: 20px;
+            border: #333;
+            list-style: none;
+
+            flex-wrap: wrap;
+
+        }
+
+        .product-item {
+            border: 1px solid #250d0d;
+        }
+
+        .product-thumb img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .product-item .product-name {
+            display: block;
+            padding: 5px 0px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+
+
+        }
+
+        .product-item .product-name :hover {
+            color: #f00;
+        }
+    </style>
+    <h1>Array map render html</h1>
+    <ul class="products">
+        
+    </ul>
+    <script>
+        const productsElement = document.querySelector('.products') ;
+        
+
+        let products = [
+            {
+                id: 1,
+                url: "#",
+                product_name: 'Iphone 13 Pro Max',
+                ram: '6GB',
+                price: '27.790.000',
+                product_thumb: 'https://proxymedia.woopic.com/api/v1/images/1618%2Fedithor%2Fterminaux%2F636x900-NOIR1_61f8df5230ee0236ac664bdd_61437903e26fe34852099ea6.png?format=504x504&saveas=png&saveasquality=85'
+
+            },
+            {
+                id: 2,
+                url: "#",
+                product_name: 'Iphone 14 Pro Max',
+                ram: '16GB',
+                price: '33.990.000',
+                product_thumb: 'https://proxymedia.woopic.com/api/v1/images/1618%2Fedithor%2Fterminaux%2FiPhone_14_Pro_Max_Gold_PDP_Image_Position-1a__FRFR_631a2478f4b8e157944a8899.jpg?crop=2826,3999,612,0&format=504x504&saveas=jpg&saveasquality=85'
+
+            }
+        ];
+
+
+        //1. Do du lieu len html voi array map
+        let productHtml = products.map((element) => {
+            return `
+            <li>
+            <div class="product-item">
+                <a href="${element.url}" class="product-thumb"><img
+                        src="${element.product_thumb}"
+                        alt=""></a>
+                <a href="${element.url}" class="product-name">${element.product_name}</a>
+                <span>RAM: ${element.ram}</span> <br>
+                <span>Price:${element.price} đ</span>
+            </div>
+        </li>
+            `
+        })
+        console.log(productHtml);
+        productsElement.innerHTML = productHtml.join (" ");
+
+    </script>
+</body>
+
+</html>

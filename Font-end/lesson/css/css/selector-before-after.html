@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before after addon selector</title>
+</head>
+<body>
+    <style>
+        h1:before{
+            content: "®";
+            color: rosybrown;
+        }
+        h1:after{
+            content: "®";
+            color: red;
+        }
+        .new:after{
+            content: url("https://c.tenor.com/x8buEnCiZ4MAAAAC/new-blinking.gif");
+        }
+    </style>
+    <h1>Before after addon selector</h1>
+    <ul>
+        <li><a class="new">san pham 1</a></li><br>
+        <li><a href="">san pham 2</a></li><br>
+        <li><a class="new" href="">san pham 3</a></li><br>
+        <li><a href="">san pham 4</a></li><br>
+
+    </ul>
+
+    
+</body>
+</html>

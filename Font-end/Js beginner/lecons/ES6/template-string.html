@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template string</title>
+</head>
+<body>
+    <h1>Template string</h1>
+    <div id="result"></div>
+    <script>
+        //Xuat du lieu chuoi kem du lieu thong minh
+        //Tong cua 30 va 40 la 70
+        const resultElement = document.getElementById('result');
+        let a = 30, b = 20 , result ;
+
+        // result = "Tong cua " + a + " va " + b + " la " + (a+b) ;
+        // console.log(result);
+        // // document.write(result);
+        // resultElement.innerHTML = result;
+
+        // cach 2
+        result = `Tong cua ${a} va ${b} la ${a+b} `;
+        resultElement.innerText = result;
+
+        
+    </script>
+    
+</body>
+</html>

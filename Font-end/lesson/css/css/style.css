@@ -1,0 +1,14 @@
+/* =======HEADER====== */
+header{
+    background: #333;
+    padding: 20px;
+    color: #f00;
+}
+/* ------Menu------ */
+/* set backgroud menu */
+ul#main-menu {
+    background-color: #333;
+}
+
+/* ------Search------ */
+/* =========CONTENT======= */

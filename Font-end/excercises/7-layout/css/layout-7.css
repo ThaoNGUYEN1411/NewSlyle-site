@@ -1,0 +1,54 @@
+body{
+    font-size: 15px;
+    line-height: 1.5;
+}
+* {
+    box-sizing: border-box;
+}
+
+h4{
+    margin: 0;
+}
+
+#header {
+    padding: 15px;
+    background-color: tomato;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* #wp-content{
+    display: flex;
+} */
+
+#content {
+    min-height: 650px;
+    background-color: gainsboro;
+    flex-direction: row;
+    flex-basis: 60%; 
+  
+    
+}
+
+#sidebar-left{
+    
+    background-color: #b1aaaa;
+    flex-basis: 20%;
+ 
+}
+
+#sidebar-right{
+
+    background-color: #b1aaaa;
+    flex-basis: 20%;
+ 
+}
+#footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+
+}

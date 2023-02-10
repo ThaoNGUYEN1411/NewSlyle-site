@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerce 6</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form </legend>
+            <label for="fullname">Fullname</label>
+            <br/>
+            <input type="text" id="fullname" autocomplete="off" />
+            <br>
+            <label for="username">Username</label>
+            <br/>
+            <input type="text" id="username" autocomplete="off" />
+            <br>
+            <label for="password">Password</label>
+            <br/>
+            <input type="text" id="password" autocomplete="off"/>
+            <br>
+            <label for="city">City</label>
+            <br>
+            <select id="city_id">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP.HCM</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Các tĩnh thành phố khác</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Register Now" />
+
+        </fieldset>
+        <br><br>
+        <div id="result">
+            <!-- Hien thi tt o day -->
+            <br>
+        </div>
+    </form>
+        <script>
+            // const fullname = document.getElementById('fullname').value ;
+            
+            // const registerForm = document.forms.register ;
+            // console.log(registerForm);
+            // registerForm.addEventListener('submit', function(e){
+            //     console.log(fullname);
+            //     e.preventDefault() ; 
+                
+            // })
+
+
+            const registerForm = document.forms.register ;
+            registerForm.addEventListener('submit', function(e){
+                let data
+                const result = document.getElementById('result');
+
+                const fullname = document.getElementById('fullname').value;
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const id_city = document.getElementById('city_id').value;
+                
+                
+
+                function show_city(city_id){
+                    let cityname = []
+                    cityname[1]= 'Hà Nội';
+                    cityname[2]= 'TP.HCM';
+                    cityname[3]= 'Đà Nẵng';
+                    cityname[4]= 'Các tĩnh thành phố khác';
+                    return cityname[city_id];
+                }
+
+                data = `
+                fullname: <b> ${fullname} </b> <br>
+                username: <b> ${username}</b> <br>
+                Password: <b> ${password}</b> <br>
+                City: <b> ${show_city(city_id)}</b> <br>
+                `
+                result.innerHTML = data;
+
+                e.preventDefault();
+                });
+        </script>
+    </form>
+    
+</body>
+</html>

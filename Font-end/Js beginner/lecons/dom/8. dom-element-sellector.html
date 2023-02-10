@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementBySelector</title>
+</head>
+<body>
+    <h1>GetElementBySelector</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+    <h2>Heading 2.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+        <ul>
+            <li class="hightlight" >Htlm Css</li>
+            <li>Javascript</li>
+            <li class="hightlight" >Php</li>
+        </ul>
+    <h2 class="hightlight">Heading 2.2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+    <h2 class="hightlight">Heading 2.3</h2>
+    <p class="hightlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+        <script>
+            //querySelector
+            // document.querySelector('p').style.color = 'red';
+            //querySelectorAll
+            // const pElements = document.querySelectorAll('p');
+            // for (element of pElements){
+            //     element.style.color = "green";
+            // }
+
+            // document.querySelector("ul .hightlight").style.color ="yellow";
+            const lihightlights = document.querySelectorAll("ul .hightlight");
+            for ( element of lihightlights ){
+                element.style.color = "red";
+            }
+            
+
+        </script>
+</body>
+</html>

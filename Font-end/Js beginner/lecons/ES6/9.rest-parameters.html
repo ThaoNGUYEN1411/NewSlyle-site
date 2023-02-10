@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest parametres Function</title>
+</head>
+<body>
+    <h1>Rest parametres Function</h1>
+    <script>
+         //Dùng thu nhận các đối số còn lại của một mảng
+         // Sử dụng cú phap
+        // let sum = (a,b) => {
+        //     return a+b ;
+        // }
+        // console.log(sum(5,7,8,10));
+        //cac so 8, 10 khong duoc lam viec khi ham chay => phai dung rest parametres
+        let total = (...moreNumbers) => {
+            let t = 0;
+            console.log(moreNumbers);
+            for( let n of moreNumbers){
+                t+= n;
+            }
+            return t;
+        }
+         console.log(total(5,7,8,10));
+    </script>
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Dom ClassList</title>
+</head>
+<body>
+    <style>
+        .new-class {
+            color: aqua;
+        }
+    </style>
+    <h1 id="demo" class="class-1 class-2 class-3 open">Html Dom ClassList</h1>
+    <script>
+        const demo = document.getElementById('demo');
+        
+        // demo.classList.add ("new-class");
+        // demo.classList.remove('class-1');
+        demo.classList.toggle('open');
+        console.log(demo.classList);
+    </script>
+</body>
+</html>

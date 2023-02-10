@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+</head>
+<body>
+    <script>
+        //Tao div
+        // - #wrapper
+        // - .text-center 
+        // - content div
+        const divWrapper = document.createElement('div');
+        divWrapper.id ='wrapper';
+        divWrapper.className ='text-center';
+        divWrapper.setAttribute('total', 900)
+        const h1 = document.createElement('h1')
+
+        const p = document.createElement('p')
+        p.innerText ='content p';
+        divWrapper.innerText ='content wp';
+        h1.innerText = 'heading 1'
+
+
+
+        const body = document.body ;
+        body.appendChild(divWrapper);
+        body.appendChild(h1);
+        body.appendChild(p);
+       
+
+
+        console.log(divWrapper);
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam viec voi thuoc tinh trong object</title>
+</head>
+<body>
+    <h1>Lam viec voi thuoc tinh trong object</h1>
+    <script>
+        //1. truy suat vao tung thuoc tinh cua object
+        // person.firstName
+        //console.log(person.firstName);
+        //console.log(person['firstName']);
+        // 2. Truy suat vao thuoc tinh qua vong lap For
+        //for (x in person){ console.log(x + ":"+ person[x]);};
+        let person = {
+        firstName: "Thao",
+        lastName: "Nguyen",
+        age: 30,
+        gender: "female"
+        };
+        //3. Cap nhat gia tri thuoc tinh trong object
+        //person.age = 18;
+        //4. Tao thuoc tinh moi cho object
+        //person.weight = 60;
+        //6. Xoa thuoc tinh trong object
+        delete(person.age);
+
+
+        console.log(person);
+    </script>
+    
+</body>
+</html>

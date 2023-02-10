@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+<body>
+    <h1>Spread operator</h1>
+    <script>
+         //spead operator (...)
+         //1. embed element
+         let my_array = [4,6,10,25];
+         // can mang moi [1,2,4,6,10,25,45,48]
+         let second_array = [1,2, ...my_array, 45,48];
+         console.log(second_array);
+
+         //2. coppy
+        let new_array = [...my_array];
+        console.log(new_array);
+
+        //3. contact array
+        let new_array1 = [...my_array, ...second_array];
+        console.log(new_array1);
+    </script>
+    
+</body>
+</html>

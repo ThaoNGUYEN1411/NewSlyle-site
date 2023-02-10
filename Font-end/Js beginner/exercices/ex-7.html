@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerce 7</title>
+</head>
+<body>
+    <style>
+        ul.products {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: space-between;
+            max-width: 500px;
+        }
+        .product-item {
+            width: 300px;
+            width: 45%;
+            height: 300px;
+        }
+        .product-item img{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <h1>Thay doi hinh anh khi hover chuot trong Js</h1>
+    <ul class="products">
+        <li class="product-item"> 
+            <img data-src-v2="photos/libazz-fashion-jacket-2.jpeg"
+            data-src-v1="photos/libazz-fashion-jacket-1.jpeg"
+             src="photos/libazz-fashion-jacket-1.jpeg" alt="">
+         </li>
+        <li class="product-item">
+             <img data-src-v2="photos/libazz-fashion-bag-2.jpeg" 
+             data-src-v1="photos/libazz-fashion-bag-1.jpeg"
+             src="photos/libazz-fashion-bag-1.jpeg" alt=""> 
+            </li>
+            
+    </ul>
+
+    <script>
+      const productItems = document.querySelectorAll('li')
+
+      for ( let productItem of productItems) {
+        productItem.addEventListener('mouseover', function(){
+           const srcV2 = this.querySelector('img').dataset.srcV2 ;
+           this.querySelector('img').setAttribute('src', srcV2)
+        })
+
+        productItem.addEventListener('mouseout', function(){
+            const srcV1 = this.querySelector('img').dataset.srcV1 ;
+            this.querySelector('img').setAttribute('src', srcV1)
+        })
+      }
+      
+    </script>
+</body>
+</html>

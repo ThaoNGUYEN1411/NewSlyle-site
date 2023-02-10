@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOM - Change Html, Text</title>
+</head>
+
+<body>
+    <h1>JS HTML DOM - Change Html, Text</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos enim architecto iste nobis excepturi
+        dolores fugit sequi nesciunt suscipit ea blanditiis culpa, fugiat cumque recusandae accusantium expedita, aut
+        adipisci?</p>
+    <h2 id="demo">Frist content</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos enim architecto iste nobis excepturi
+        dolores fugit sequi nesciunt suscipit ea blanditiis culpa, fugiat cumque recusandae accusantium expedita, aut
+        adipisci?</p>
+        <div id="result">
+            <!-- ket qua -->
+        </div>
+    <script>
+        //Lam thay doi noi cung cua mot Element
+        // const demo = document.getElementById('demo');
+        // console.log(demo.innerHTML);
+        // demo.style.color ='blue';
+        let total = 1988;
+        // day la ket qua cua mot qua trinh tinh toan, can phai dua ra man hinh , vi du gio hang, tinh tien
+        const result= document.getElementById("result");
+        result.innerHTML= "<b> Thanh tien:"+total+ "$";
+
+    </script>
+</body>
+
+</html>

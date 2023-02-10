@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load event Js</title>
+</head>
+<body >
+    <h1>Load event Js</h1>
+    <img src="developpeur_web1.webp"  alt="" style="max-width: 50%;">
+    <script>
+        //Kich hoat khi noi dung duoc load xong
+        //1. load trang
+        // window.addEventListener('load', function(){
+        //     alert('Window loaded!')
+        // })
+        //2. Load hinh anh
+            const imgElement = document.querySelector('img');
+            imgElement.addEventListener('load', function(){
+                alert('Img loaded and remove loading icon!');
+            })
+
+    </script>
+</body>
+</html>

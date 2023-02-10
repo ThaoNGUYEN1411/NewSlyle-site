@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hien thi danh sach san pham bai viet theo chieu ngang-Flex</title>
+</head>
+
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #wrapper{
+            width:960px ;
+            margin: 0px auto;
+
+        }
+        ul.list-product{
+            padding-left: 0px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.list-product li {
+            flex-basis: 33.3%;
+            
+            padding:10px 15px ;
+        }
+        .product-item{
+            border: 1px solid #333;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Hien thi danh sach san pham bai viet theo chieu ngang-Flex</h1>
+        <!-- -----Danh sach----- -->
+        <ul class="list-product">
+            <li>
+                <div class="product-item">
+                    <!-- anh
+                tieu de
+                gia
+                mua ngay -->
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                        sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                        sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                        sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                    sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                        sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dolore quidem obcaecati
+                        sapiente possimus quae iusto deserunt necessitatibus reiciendis qui.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

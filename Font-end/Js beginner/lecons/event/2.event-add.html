@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event to element </title>
+</head>
+
+<body>
+    <h1>How to add event to element? </h1>
+    <!-- Cach 1: Inline element -->
+    <!-- <button id="btn" onclick="show()"> Click me</button> -->
+    <button id="btn">Click me</button>
+    <script>
+        function show() {
+            alert('2 Button Clicked!');
+        }
+        //Cach 2: JS
+        const btnElement = document.getElementById('btn');
+        // console.log(btnElement);
+        // btnElement.onclick = show;
+        btnElement.onclick = function(){
+            alert('click 1');
+        }
+        btnElement.onclick = function(){
+            alert('click 2');
+        }
+        //Cach 3 AddEventListener
+        // btnElement.addEventListener('click', show);
+// Luu y nen dung cach 3, cach3 cta co the kich hoat nhieu su kien tren 1 phan tu
+// btnElement.addEventListener('click', function(){
+//     alert( "Thao" );
+// });
+// btnElement.addEventListener('click', function(){
+//     alert( "Viet" );
+// });
+    </script>
+</body>
+
+</html>

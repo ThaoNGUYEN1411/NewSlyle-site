@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+    <h1>Arrow function</h1>
+    <script>
+        //yeu cau: viet ham sayHi de xuat loi chao
+        // 1. cach viet thong thuong
+        // function sayHi() {
+        //     return "Xin chao!"
+        // }
+        // let sayHi = function () {
+        //     return "Xin chao!"
+        // }
+
+        //2. arrow function
+        // let sayHi = () => { return "Xin chao!"}
+        // let sayHi = () => "Xin chao"
+//phan 2 voi ham co tham so
+            // 1. thong thuong
+            // function sayHi(name){
+            //     return `Xin chao ${name}`
+            // };
+            // let sayHi = function(name){
+            //     return `Xin chao ${name}`
+            // }
+            //2. arrow function
+            // let sayHi = (name) => `Xin chao ${name}`
+            // let sayHi = name => `Xin chao ${name}`
+            // 3. Lien quan den su kien
+            let h1Element = document.querySelector('h1');
+            h1Element.addEventListener('click', () =>{
+                alert('ok');
+            });
+        console.log(sayHi('Mai Anh'));
+    </script>
+</body>
+
+</html>

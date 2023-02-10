@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <h1>Destructuring</h1>
+    <script>
+        //1. Nhan gia tri tu array, object
+        let my_array = [3,30,18]
+        //cach thong thuong
+        // let a = my_array[0];
+        // let b = my_array[1];
+        // let c = my_array[2];
+        let [a,b,c] = my_array;
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+        console.log(`c = ${c}`);
+
+        let MY_INFO = {
+            fullname: 'Thao Nguyen',
+            email: 'pthao@gmail.com'
+        }
+        let {fullname,email} = MY_INFO;
+        console.log(fullname);
+    </script>
+    
+</body>
+</html>

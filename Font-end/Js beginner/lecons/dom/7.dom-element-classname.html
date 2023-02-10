@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementByClassName</title>
+</head>
+
+<body>
+    <h1>GetElementByClassName</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+    <h2>Heading 2.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+    <h2 class="hightlight">Heading 2.2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+    <h2 class="hightlight">Heading 2.3</h2>
+    <p class="hightlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt quas quo repellendus rem corporis
+        praesentium voluptatem necessitatibus quidem veritatis mollitia cupiditate totam deserunt quod voluptatibus, est
+        numquam nihil hic!</p>
+        <script>
+            const hightlights = document.getElementsByClassName("hightlight");
+            console.log(hightlights);
+            for(element of hightlight){
+                element.style.background = "red";
+            }
+        </script>
+</body>
+
+</html>

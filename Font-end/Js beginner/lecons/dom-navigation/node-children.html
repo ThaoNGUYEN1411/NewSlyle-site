@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node name</title>
+</head>
+
+<body>
+    <h1>Node name</h1>
+    <a href="">Hoc lap trinh web di lam</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti iusto aut magnam expedita incidunt officia,
+        hic atque. Sequi, eius tempore accusamus corporis soluta dolorem iusto quis laudantium repudiandae modi minima
+        molestias sapiente maiores officiis voluptatibus fugit consectetur aut omnis dignissimos, qui unde dolor
+        si.</p>
+        <ul id="main-menu">
+            <li><a href="">item 1</a>
+                <ul class="sub-menu">
+                    <li><a href="">item 1.1</a></li>
+                    <li><a href="">item 1.2</a></li>
+                    <li><a href="">item 1.3</a></li>
+                </ul>
+            </li>
+            <li><a href="">item 2</a></li>
+            <li><a href="">item 3</a></li>
+            <li><a href="">item 4</a></li>
+        </ul>
+
+        <script>
+            const bodyNode = document.body ;
+            // console.log (bodyNode.childNodes)
+            // console.log (bodyNode.children)
+            // console.log(bodyNode.children[0])
+            console.log(bodyNode.querySelector('#main-menu'));
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css ex5</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+    *{
+        box-sizing: border-box;
+    }
+        /* ------định dạng từng box riêng ----- */
+              #content {
+            width: 600px;
+            min-height: 600px;
+            background: #f3f3f3;
+          }
+
+        #sidebar {
+            width: 360px;
+            min-height: 600px;
+            background: #e1e1e1;
+        }
+   
+        
+        /* -----class dùng chung----- */
+        .bg-green {
+            background-color: green;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .pd-15 {
+            padding: 15px;
+        }
+        .pd-10 {
+            padding: 10px;
+        }
+        .float-right{
+            float: right;
+        }
+        .float-left{
+            float: left;
+        }
+        
+     
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+        .clearfix {
+            clear: both;
+            display: block;
+        }
+
+    </style>
+    <div id="wrapper">
+        <div id="header" class="bg-green text-center pd-15">
+            Layout web 2 cột - Float Css
+        </div>
+        <div id="wp-content" class="clearfix">
+            <div id="content" class="pd-15 float-left ">
+                Content
+            </div>
+            <div id="sidebar" class="pd-15 float-right ">
+                Sidebar
+            </div>
+        </div>
+        <div id="footer" class="bg-green text-center pd-10 ">
+            Unitop.vn
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

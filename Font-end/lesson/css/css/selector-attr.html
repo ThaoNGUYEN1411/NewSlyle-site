@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo thuoc tinh</title>
+</head>
+<body>
+    <style>
+        /* a[href]{
+            color: #f00;
+        }
+        a[href="http://unitop.vn"]{ 
+            font-size: 50px;}
+            a[href*="google"]{
+                background: #f00;
+            } */
+            a[href^="http"]{
+                color: aqua;
+            }
+            a[href$=".vn"]{
+                font-size: 100px;
+            }
+    </style>
+    <h1>Selector theo thuoc tinh</h1>
+    <a href="http://unitop.vn">html css 21 ngay</a>
+    <a href="http://google.com">js co ban</a>
+
+    
+</body>
+</html>

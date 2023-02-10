@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locolstorage object</title>
+</head>
+<body>
+    <h1> Locolstorage object</h1>
+   <script>
+    const LIST_USERS = 'LIST_USER';
+    let users = [{
+        fullname: 'Phan Van Cuong',
+        email: 'support@unitop.vn',
+        age: 30
+    },
+    {
+        fullname: 'Phan Thi Mai',
+        email: 'maiphan@unitop.vn',
+        age: 25
+    }];
+    // console.log(user);
+
+    // localStorage.setItem('USER_INFO', JSON.stringify(user));
+    // //lay du lieu ra
+    //  let data = JSON.parse(localStorage.getItem('USER_INFO'));
+    //  console.log(data.fullname);
+    //  quy trinh
+    // OBJECT => JSON.stringify => localStorage => JSON.parse => OBJECT
+
+    localStorage.setItem(LIST_USERS, JSON.stringify(users));
+    let data = JSON.parse(localStorage.getItem(LIST_USERS));
+    console.log(data);
+   </script>
+</body>
+</html>

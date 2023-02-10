@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex wrap</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background: blue;
+            margin: 20px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            background: gray;
+            width: 1070px;
+            margin: 0px auto;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <h1>Display flex</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    
+</body>
+</html>

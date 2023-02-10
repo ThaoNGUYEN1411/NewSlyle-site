@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=$, initial-scale=1.0">
+    <title>Js html Dom dataset</title>
+</head>
+<body>
+    <h1>Js html Dom dataset</h1>
+    <div id="user" data-id="8892" data-age="30" data-username="pthao.nt" data-date-of-birth="" >Nguyen Thao</div>
+    <script>
+        const user = document.getElementById('user');
+        // console.log(user.dataset);
+        // console.log(user.dataset.username);
+        user.dataset.username = "phuongthao";
+        user.dataset.dateOfBirth ="05/01/1988"
+        delete user.dataset.username;
+        console.log(user.dataset);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt mảng bằng vòng lặp foreach trong Js</title>
+</head>
+<body>
+    <h1>Duyệt mảng bằng vòng lặp foreach trong Js</h1>
+    <script>
+        let list_numbers=[1,5,12,14,13,55];
+        
+        //tinh tong bang foreach
+        /*let t=0;
+        list_numbers.forEach(function(currentValue, index){
+            t +=currentValue;
+            document.write(index+':'+currentValue+'<br>');
+        });
+        document.write('Tong: '+t);*/
+        list_numbers.forEach(my_function);
+        function my_function(currentValue, index, arr){
+            arr[index] = currentValue*15;
+        }
+        console.log(list_numbers);
+    </script>
+</body>
+</html>
